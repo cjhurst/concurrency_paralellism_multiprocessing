@@ -1,0 +1,17 @@
+
+version: '3'
+
+services:
+  postgres:
+    build: .
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg-dataset-11:/var/lib/postgresql/data
+      - .:/code
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_HOST_AUTH_METHOD: trust
+
+volumes:
+  pg-dataset-11:

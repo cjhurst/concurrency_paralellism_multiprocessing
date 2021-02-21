@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+   db:
+     build: .
+     ports:
+      - "3306:3306"
+     volumes:
+       - db_data:/var/lib/mysql
+       - .:/code
+     environment:
+       MYSQL_ROOT_PASSWORD: someorb
+       MYSQL_DATABASE: orb
+       MYSQL_USER: orb
+       MYSQL_PASSWORD: orb
+       volumes:
+volumes:
+    db_data: {}
