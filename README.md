@@ -1,4 +1,4 @@
-##Practicing concurrency, multiprocessing and paralellism in python
+## Practicing concurrency, multiprocessing and paralellism in python
 
 
 Resources for brushing up:
